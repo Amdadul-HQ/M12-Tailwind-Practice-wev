@@ -13,6 +13,12 @@
         rel="stylesheet">
     <!-- Google Font End -->
 
+    <!-- Icon CDN link Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Icon CDN link End -->
+
     <!-- Tailwind Css Start -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind Css End -->
@@ -26,25 +32,29 @@
         }
     </style>
 </head>
+<!-- grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 -->
 
 <body>
-    <header class="bg-[#FFFBF0] min-h-[820px]">
-        <nav class="flex max-w-screen-xl mx-auto justify-between items-center">
-            <img class="w-[300px]" src="icons/logo.png" alt="">
-            <ul class="flex">
+    <header class="bg-[#FFFBF0] w-full lg:w-11/12 md:w-11/12 mx-auto">
+        <nav class="flex justify-between items-center">
+            <img class="sm:w-[300px] w-[200px]" src="icons/logo.png" alt="">
+            <ul class="sm:flex hidden">
                 <li class="m-5 list-none"><a class="text-base font-medium" href="">Home</a></li>
                 <li class="m-5 list-none"><a class="text-base font-medium" href="">Prouct</a></li>
                 <li class="m-5 list-none"><a class="text-base font-medium" href="">About Us</a></li>
                 <li class="m-5 list-none"><a class="text-base font-medium" href="">Contact Us</a></li>
             </ul>
+            <div class="sm:hidden text-4xl block">
+                <i class="ri-menu-line"></i>
+            </div>
         </nav>
-        <div class="max-w-screen-xl mx-auto flex justify-between items-center my-20">
+        <div class="w-full flex sm:flex-row flex-col justify-between items-center my-20">
             <div class="space-y-2">
                 <h1 class="text-7xl font-normal font-bebas"><span class="text-[#FABE4C]">Be the Penguins</span><br><span
                         class="text-[#363958]"> of Winter</span></h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 <button
-                    class="rounded-2xl font-roboto font-medium text-[#fff] cursor-pointer text-base px-8 py-5 bg-gradient-to-r from-[#A4BC46] to-[#85A019] hover:bg-[#5d6b26]">Buy
+                    class="rounded-2xl font-roboto font-medium text-[#fff] cursor-pointer text-base px-8 py-5 bg-gradient-to-r from-[#A4BC46] to-[#85A019] hover:text-red-500 transition-all duration-200">Buy
                     Now</button>
             </div>
             <div>
@@ -52,14 +62,14 @@
             </div>
         </div>
     </header>
-    <main class="max-w-screen-xl mx-auto">
+    <main class="max-w-screen-xl mx-auto ">
         <!-- Woman jacket Section -->
         <section class="my-20">
             <h1 class="mb-5 uppercase font-bebas text-5xl font-normal text-[#363958]">Woman jacket</h1>
             <!-- Woman Jacket Grid Section -->
-            <div class="grid grid-cols-3 gap-x-8">
+            <div class="grid sm:grid-cols-3 gap-x-8">
                 <!-- woman Jacket 1 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-1.png" alt="">
                     </div>
@@ -78,7 +88,7 @@
                 <!-- woman Jacket 1 End -->
 
                 <!-- woman Jacket 2 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-2.png" alt="">
                     </div>
@@ -97,7 +107,7 @@
                 <!-- woman Jacket 2 End -->
 
                 <!-- woman Jacket 3 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-3.png" alt="">
                     </div>
@@ -124,9 +134,9 @@
         <section class="my-20">
             <h1 class="mb-5 uppercase font-bebas text-5xl font-normal text-[#363958]">Man jacket</h1>
             <!-- Man Jacket Grid Section -->
-            <div class="grid grid-cols-3 gap-x-8">
+            <div class="grid sm:grid-cols-3 gap-x-8">
                 <!-- Man Jacket 1 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-4.png" alt="">
                     </div>
@@ -145,7 +155,7 @@
                 <!-- Man Jacket 1 End -->
 
                 <!-- Man Jacket 2 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-5.png" alt="">
                     </div>
@@ -164,7 +174,7 @@
                 <!-- Man Jacket 2 End -->
 
                 <!-- Man Jacket 3 Start -->
-                <div class="space-y-5 drop-shadow-xl">
+                <div class="space-y-5 p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl">
                         <img src="images/jacket-6.png" alt="">
                     </div>
@@ -190,47 +200,50 @@
         <!-- Coustomer Service Section Start -->
         <section class="my-52">
             <!-- Coustomer Conteinar -->
-            <div class="flex gap-x-4 items-center justify-between">
+            <div class="sm:flex sm:gap-4 items-center justify-between">
                 <div class="min-w-[50%] space-y-4">
-                    <div class="p-8 rounded-2xl">
+                    <div class="p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                         <div class="flex items-center gap-x-9">
                             <div class="w-[78px]">
                                 <img src="icons/house.png" alt="">
                             </div>
                             <div class="font-roboto space-y-2">
                                 <h2 class="text-[#363958] text-2xl font-bold">Find the Perfect Fit</h2>
-                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">Everybody is different, which is why
+                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">Everybody is different,
+                                    which is why
                                     we
                                     offer styles for every body.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Find The Perfact Fit Section End -->
-        
+
                     <!-- Free Exchanges Section Start  -->
-                    <div class="p-8 rounded-2xl">
+                    <div class="p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                         <div class="flex items-center gap-x-9">
                             <div class="w-[78px]">
                                 <img src="icons/box.png" alt="">
                             </div>
                             <div class="font-roboto space-y-2">
                                 <h2 class="text-[#363958] text-2xl font-bold">Free Exchanges</h2>
-                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">One of the many reasons you can shop
+                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">One of the many reasons you
+                                    can shop
                                     with peace of mind.</p>
                             </div>
                         </div>
                     </div>
                     <!-- Free Exchanges Section End -->
-        
+
                     <!-- Contact Our Seller Section Start -->
-                    <div class="p-8 rounded-2xl">
+                    <div class="p-4 rounded-2xl shadow-[0px_10px_30px_0px_rgba(0,0,0,0.05)]">
                         <div class="flex items-center gap-x-9">
                             <div class="w-[78px]">
                                 <img src="icons/question.png" alt="">
                             </div>
                             <div class="font-roboto space-y-2">
                                 <h2 class="text-[#363958] text-2xl font-bold">Contact Our Seller</h2>
-                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">They are here to help you. That's
+                                <p class="max-w-[275px] text-#3E3E3E text-base font-normal">They are here to help you.
+                                    That's
                                     quite literally what we pay them for.</p>
                             </div>
                         </div>
@@ -239,7 +252,7 @@
                 </div>
 
                 <!-- Service image Start -->
-                <div>
+                <div class="mt-5">
                     <img src="images/shopping.png" alt="">
                 </div>
             </div>
